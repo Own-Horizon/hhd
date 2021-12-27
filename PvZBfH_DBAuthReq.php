@@ -12,7 +12,7 @@
 	}
 	else
 		$Xsolla_ID = $_POST['Xsolla_ID'];
-		$sql = SELECT * FROM Accs_Currency WHERE Xsolla_ID = '$Xsolla_ID';
+		$sql = "SELECT * FROM Accs_Currency WHERE Xsolla_ID = '$Xsolla_ID'";
 		$result = mysqli_query($mysqli, $sql);
 		
 		if(mysqli_num_rows($result) == 0)
