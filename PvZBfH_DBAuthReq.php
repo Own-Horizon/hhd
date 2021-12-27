@@ -17,7 +17,7 @@
 		
 		if(mysqli_num_rows($result) == 0)
 		{
-				$mysqli->query ("INSERT INTO `Accs_Currency` (`ID`, `Xsolla_ID`, `Coins`, `Tacos`, `Cookies`, `SandClocks`, `LeafBadges`, `MagicPollen`, `CrystalBrains`, `Souls`, `HopeStones`) VALUES (NULL, '$Xsolla_ID', '0', '0', '0', '0', '0', '0', '0', '0', '0')");
+				$mysqli->query ("INSERT INTO Accs_Currency(ID, Xsolla_ID, Coins, Tacos, Cookies, SandClocks, LeafBadges, MagicPollen, CrystalBrains, Souls, HopeStones) VALUES (NULL, '$Xsolla_ID', '0', '0', '0', '0', '0', '0', '0', '0', '0')");
 		}
 		else{echo json_encode(array('return' => '1'));}
 ?>
