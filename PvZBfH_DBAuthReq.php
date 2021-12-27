@@ -6,5 +6,5 @@
 	{
 			echo json_encode(array('return' => '3'));
 	}
-
+	else {echo json_encode(array('return' => '0'));}
 ?>
